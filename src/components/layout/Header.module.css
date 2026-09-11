@@ -1,0 +1,152 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.container {
+  width: min(calc(100% - 2 * var(--page-gutter)), var(--container-max));
+  margin-inline: auto;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 52px;
+}
+
+@media (min-width: 768px) {
+  .headerInner {
+    min-height: 64px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 2rem;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .logoImage {
+    height: 2.5rem;
+  }
+}
+
+.desktopNav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopNav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  border-radius: var(--radius-card);
+  transition: color var(--motion-fast) var(--ease-out), background-color var(--motion-fast) var(--ease-out);
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background-color: var(--color-page);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.mobileMenuBtn {
+  display: inline-flex;
+  padding: 0.5rem;
+  border-radius: var(--radius-card);
+  color: var(--color-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--motion-fast);
+}
+
+.mobileMenuBtn:hover {
+  background-color: var(--color-page);
+}
+
+@media (min-width: 768px) {
+  .mobileMenuBtn {
+    display: none;
+  }
+}
+
+.menuIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.mobileMenu {
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .mobileMenu {
+    display: none;
+  }
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mobileNavLink {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  border-radius: var(--radius-card);
+  transition: background-color var(--motion-fast);
+  text-decoration: none;
+}
+
+.mobileNavLink:hover {
+  background-color: var(--color-page);
+}
+
+.headerButton {
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+/* Mobile: sembunyikan tombol Chat Admin — FloatingWhatsApp sudah menangani ini */
+@media (max-width: 767px) {
+  .headerButton {
+    display: none;
+  }
+}

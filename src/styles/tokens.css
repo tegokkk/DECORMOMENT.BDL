@@ -1,0 +1,86 @@
+:root {
+  --color-page: #f6f1ec;
+  --color-surface: #fffcf8;
+  --color-petal: #f3e0e1;
+  --color-blush: #e8c5c8;
+  --color-primary: #9a3f57;
+  --color-primary-hover: #813248;
+  --color-primary-active: #6d293c;
+  --color-ink: #302425;
+  --color-muted: #6e5b60;
+  --color-border: #d8c6c4;
+  --color-control-border: #927579;
+  --color-focus: #68324b;
+  --color-on-primary: #ffffff;
+  --color-success: #2f674d;
+  --color-danger: #9f3442;
+
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --text-hero: clamp(2rem, 1.25rem + 3vw, 4rem);
+  --text-section: clamp(1.75rem, 1.25rem + 2vw, 2.75rem);
+  --text-body: 1rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  --radius-card: 0.5rem;
+  --radius-panel: 0.75rem;
+  --radius-dialog: 1.25rem;
+  --radius-pill: 999px;
+  --frame-max: 80rem;
+  --container-max: 70rem;
+  --page-gutter: 1.25rem;
+  --section-space: 2.5rem;
+
+  --shadow-soft: 0 8px 24px rgb(48 36 37 / 7%);
+  --shadow-dialog: 0 24px 64px rgb(48 36 37 / 20%);
+  
+  /* Candy Button Styles */
+  --candy-shadow: 
+    inset 0 2px 2px rgba(255, 255, 255, 0.35), 
+    inset 0 -2px 2px rgba(0, 0, 0, 0.12), 
+    0 4px 6px -1px rgba(0, 0, 0, 0.12),
+    0 2px 4px -2px rgba(0, 0, 0, 0.08);
+  --candy-shadow-hover: 
+    inset 0 2px 2px rgba(255, 255, 255, 0.45), 
+    inset 0 -2px 2px rgba(0, 0, 0, 0.12), 
+    0 6px 12px -2px rgba(0, 0, 0, 0.15),
+    0 3px 6px -2px rgba(0, 0, 0, 0.1);
+  --candy-shadow-active: 
+    inset 0 3px 6px rgba(0, 0, 0, 0.15), 
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --candy-border: 1px solid rgba(255, 255, 255, 0.2);
+  --candy-radius: 12px;
+
+  --motion-fast: 180ms;
+  --motion-base: 240ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --z-header: 20;
+  --z-menu: 30;
+  --z-floating: 40;
+  --z-overlay: 9998;
+  --z-dialog: 9999;
+}
+
+@media (min-width: 640px) {
+  :root { --page-gutter: 2rem; }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-gutter: 3rem;
+    --section-space: 5rem;
+  }
+}

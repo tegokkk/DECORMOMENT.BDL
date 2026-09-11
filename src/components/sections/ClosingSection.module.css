@@ -1,0 +1,39 @@
+.section {
+  padding: var(--section-space) 0;
+  background: var(--color-blush);
+  text-align: center;
+}
+
+.container {
+  width: min(calc(100% - 2 * var(--page-gutter)), 600px);
+  margin-inline: auto;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-section);
+  color: var(--color-ink);
+  margin-bottom: var(--space-4);
+}
+
+.desc {
+  font-size: 1rem;
+  color: var(--color-ink);
+  margin-bottom: var(--space-6);
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .button {
+    width: auto;
+    min-width: 240px;
+  }
+}

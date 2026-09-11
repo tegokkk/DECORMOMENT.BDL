@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.carouselFrame {
+  cursor: grab;
+  overflow: hidden;
+  padding: 1rem 0;
+  outline: none;
+  touch-action: pan-y;
+}
+
+.carouselFrame:active {
+  cursor: grabbing;
+}
+
+.carouselFrame:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-focus);
+}
+
+.slideTrack {
+  position: relative;
+  user-select: none;
+  transform-style: preserve-3d;
+}
+
+.slideItem {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  aspect-ratio: 3 / 4; /* Adjusted to 3/4 like standard product images */
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background-color: var(--color-petal);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  will-change: transform;
+}
+
+.slideImage {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  object-fit: cover;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+  border-radius: 50%;
+  background: var(--color-surface);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), inset 0 2px 2px rgba(255, 255, 255, 0.35);
+  border: var(--candy-border);
+  padding: 0.5rem;
+  color: var(--color-ink);
+  transition: transform var(--motion-fast) var(--ease-out), box-shadow var(--motion-fast) var(--ease-out), background-color var(--motion-fast) var(--ease-out);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navButton:hover {
+  background: var(--color-page);
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 6px 10px -2px rgba(0, 0, 0, 0.15), inset 0 2px 2px rgba(255, 255, 255, 0.45);
+}
+.navButton:active {
+  transform: translateY(-50%) scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navButtonLeft {
+  left: 0.75rem;
+}
+.navButtonRight {
+  right: 0.75rem;
+}
+
+.caption {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+  transition: opacity 0.3s;
+}
+
+.title {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.pagination {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.pageDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--color-ink);
+  transition: opacity var(--motion-fast);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}

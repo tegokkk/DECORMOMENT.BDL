@@ -1,0 +1,73 @@
+.footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-8);
+}
+
+.container {
+  width: min(calc(100% - 2 * var(--page-gutter)), var(--container-max));
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  padding-bottom: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.brandInfo {
+  max-width: 320px;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.description {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.linkTitle {
+  font-size: 1rem;
+  color: var(--color-ink);
+  font-weight: 600;
+  margin-bottom: var(--space-1);
+}
+
+.linkGroup a {
+  color: var(--color-muted);
+  transition: color var(--motion-fast) var(--ease-out);
+}
+
+.linkGroup a:hover {
+  color: var(--color-primary);
+}
+
+.bottomBar {
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-6) 0;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}

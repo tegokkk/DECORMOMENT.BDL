@@ -1,0 +1,735 @@
+{
+  "date": "2026-09-11",
+  "target": "http://127.0.0.1:4173",
+  "browser": "Microsoft Edge Chromium headless",
+  "responsive": [
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "bodyHeight": 5859,
+      "fonts": {
+        "body": "\"DM Sans\", system-ui, sans-serif",
+        "title": "\"DM Serif Display\", Georgia, serif"
+      },
+      "images": [
+        {
+          "src": "/images/products/IMG_2715.PNG",
+          "width": 2268,
+          "height": 2268,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0881.PNG",
+          "width": 1149,
+          "height": 1369,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0882.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0917.PNG",
+          "width": 1122,
+          "height": 1402,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2204.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        }
+      ],
+      "floatingName": "",
+      "navVisible": false,
+      "smallControls": [
+        {
+          "label": "Previous slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Next slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Go to slide 1",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 2",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 3",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 4",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 5",
+          "width": 8,
+          "height": 8
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "bodyHeight": 5624,
+      "fonts": {
+        "body": "\"DM Sans\", system-ui, sans-serif",
+        "title": "\"DM Serif Display\", Georgia, serif"
+      },
+      "images": [
+        {
+          "src": "/images/products/IMG_2715.PNG",
+          "width": 2268,
+          "height": 2268,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0881.PNG",
+          "width": 1149,
+          "height": 1369,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0882.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0917.PNG",
+          "width": 1122,
+          "height": 1402,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2204.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        }
+      ],
+      "floatingName": "",
+      "navVisible": false,
+      "smallControls": [
+        {
+          "label": "Previous slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Next slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Go to slide 1",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 2",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 3",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 4",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 5",
+          "width": 8,
+          "height": 8
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "bodyHeight": 5007,
+      "fonts": {
+        "body": "\"DM Sans\", system-ui, sans-serif",
+        "title": "\"DM Serif Display\", Georgia, serif"
+      },
+      "images": [
+        {
+          "src": "/images/products/IMG_2715.PNG",
+          "width": 2268,
+          "height": 2268,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0881.PNG",
+          "width": 1149,
+          "height": 1369,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0882.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0917.PNG",
+          "width": 1122,
+          "height": 1402,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2204.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        }
+      ],
+      "floatingName": "Chat WhatsApp",
+      "navVisible": true,
+      "smallControls": [
+        {
+          "label": "Previous slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Next slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Go to slide 1",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 2",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 3",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 4",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 5",
+          "width": 8,
+          "height": 8
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "bodyHeight": 5049,
+      "fonts": {
+        "body": "\"DM Sans\", system-ui, sans-serif",
+        "title": "\"DM Serif Display\", Georgia, serif"
+      },
+      "images": [
+        {
+          "src": "/images/products/IMG_2715.PNG",
+          "width": 2268,
+          "height": 2268,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0881.PNG",
+          "width": 1149,
+          "height": 1369,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0882.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0917.PNG",
+          "width": 1122,
+          "height": 1402,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2204.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        }
+      ],
+      "floatingName": "Chat WhatsApp",
+      "navVisible": true,
+      "smallControls": [
+        {
+          "label": "Previous slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Next slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Go to slide 1",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 2",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 3",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 4",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 5",
+          "width": 8,
+          "height": 8
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "bodyHeight": 5078,
+      "fonts": {
+        "body": "\"DM Sans\", system-ui, sans-serif",
+        "title": "\"DM Serif Display\", Georgia, serif"
+      },
+      "images": [
+        {
+          "src": "/images/products/IMG_2715.PNG",
+          "width": 2268,
+          "height": 2268,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0881.PNG",
+          "width": 1149,
+          "height": 1369,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0882.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_0917.PNG",
+          "width": 1122,
+          "height": 1402,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2204.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        },
+        {
+          "src": "/images/products/IMG_2205.PNG",
+          "width": 1086,
+          "height": 1448,
+          "loaded": true
+        }
+      ],
+      "floatingName": "Chat WhatsApp",
+      "navVisible": true,
+      "smallControls": [
+        {
+          "label": "Previous slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Next slide",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "label": "Go to slide 1",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 2",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 3",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 4",
+          "width": 8,
+          "height": 8
+        },
+        {
+          "label": "Go to slide 5",
+          "width": 8,
+          "height": 8
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "browserVersion": "152.0.4191.66",
+  "meta": {
+    "title": "Decormoment.bdl",
+    "description": "Papan ucapan akrilik custom untuk momen spesialmu di Bandar Lampung.",
+    "canonical": null,
+    "og": [],
+    "robots": null,
+    "schemaCount": 0
+  },
+  "initialResources": [
+    {
+      "name": "IMG_2205.PNG",
+      "type": "link",
+      "bytes": 2944795
+    },
+    {
+      "name": "520ae529cd86c5bc.css",
+      "type": "link",
+      "bytes": 3908
+    },
+    {
+      "name": "50af2c1c1a5c232a.css",
+      "type": "link",
+      "bytes": 17585
+    },
+    {
+      "name": "webpack-57809c0c896e56d6.js",
+      "type": "link",
+      "bytes": 3567
+    },
+    {
+      "name": "fd9d1056-46273ceae6f69a48.js",
+      "type": "script",
+      "bytes": 172831
+    },
+    {
+      "name": "117-ff909d3e1d7a9994.js",
+      "type": "script",
+      "bytes": 123798
+    },
+    {
+      "name": "main-app-76feecfe47315687.js",
+      "type": "script",
+      "bytes": 461
+    },
+    {
+      "name": "568-6cc32129e0aadb9d.js",
+      "type": "script",
+      "bytes": 38619
+    },
+    {
+      "name": "page-03606b10829f419d.js",
+      "type": "script",
+      "bytes": 16428
+    },
+    {
+      "name": "layout-b5c9233082623e84.js",
+      "type": "script",
+      "bytes": 21048
+    },
+    {
+      "name": "IMG_2715.PNG",
+      "type": "img",
+      "bytes": 3206179
+    },
+    {
+      "name": "IMG_0881.PNG",
+      "type": "img",
+      "bytes": 2682736
+    },
+    {
+      "name": "IMG_0917.PNG",
+      "type": "img",
+      "bytes": 2705698
+    },
+    {
+      "name": "IMG_0882.PNG",
+      "type": "img",
+      "bytes": 2540180
+    },
+    {
+      "name": "IMG_2204.PNG",
+      "type": "img",
+      "bytes": 2586792
+    },
+    {
+      "name": "favicon.ico",
+      "type": "other",
+      "bytes": 335
+    }
+  ],
+  "links": [
+    {
+      "text": "",
+      "href": "http://127.0.0.1:4173/",
+      "label": null
+    },
+    {
+      "text": "Katalog",
+      "href": "http://127.0.0.1:4173/#katalog",
+      "label": null
+    },
+    {
+      "text": "Cara Pesan",
+      "href": "http://127.0.0.1:4173/#cara-pesan",
+      "label": null
+    },
+    {
+      "text": "FAQ",
+      "href": "http://127.0.0.1:4173/#faq",
+      "label": null
+    },
+    {
+      "text": "Chat Admin",
+      "href": "https://wa.me/6289507991976?text=Halo%20Decormoment.bdl%2C%20saya%20ingin%20konsultasi%20papan%20ucapan%20untuk%20acara%20saya.%0ABoleh%20dibantu%20memilih%20model%20dan%20cek%20ketersediaannya%3F",
+      "placement": "header",
+      "label": null
+    },
+    {
+      "text": "Lihat Koleksi",
+      "href": "http://127.0.0.1:4173/#katalog",
+      "label": null
+    },
+    {
+      "text": "Cek Ketersediaan",
+      "href": "https://wa.me/6289507991976?text=Halo%20Decormoment.bdl%2C%20saya%20ingin%20konsultasi%20papan%20ucapan%20untuk%20acara%20saya.%0ABoleh%20dibantu%20memilih%20model%20dan%20cek%20ketersediaannya%3F",
+      "placement": "hero",
+      "label": null
+    },
+    {
+      "text": "Mulai dari WhatsApp",
+      "href": "https://wa.me/6289507991976?text=Halo%20Decormoment.bdl%2C%20saya%20ingin%20konsultasi%20papan%20ucapan%20untuk%20acara%20saya.%0ABoleh%20dibantu%20memilih%20model%20dan%20cek%20ketersediaannya%3F",
+      "placement": "order_steps",
+      "label": null
+    },
+    {
+      "text": "Cek Jadwal via WhatsApp",
+      "href": "https://wa.me/6289507991976?text=Halo%20Decormoment.bdl%2C%20saya%20ingin%20konsultasi%20papan%20ucapan%20untuk%20acara%20saya.%0ABoleh%20dibantu%20memilih%20model%20dan%20cek%20ketersediaannya%3F",
+      "placement": "closing",
+      "label": null
+    },
+    {
+      "text": "Katalog",
+      "href": "http://127.0.0.1:4173/#katalog",
+      "label": null
+    },
+    {
+      "text": "Cara Pesan",
+      "href": "http://127.0.0.1:4173/#cara-pesan",
+      "label": null
+    },
+    {
+      "text": "FAQ",
+      "href": "http://127.0.0.1:4173/#faq",
+      "label": null
+    },
+    {
+      "text": "Instagram",
+      "href": "https://instagram.com/decormoment.bdl",
+      "label": null
+    },
+    {
+      "text": "TikTok",
+      "href": "https://tiktok.com/@decormoment.bdl",
+      "label": null
+    },
+    {
+      "text": "Chat WhatsApp",
+      "href": "https://wa.me/6289507991976?text=Halo%20Decormoment.bdl%2C%20saya%20ingin%20konsultasi%20papan%20ucapan%20untuk%20acara%20saya.%0ABoleh%20dibantu%20memilih%20model%20dan%20cek%20ketersediaannya%3F",
+      "placement": "floating",
+      "label": null
+    }
+  ],
+  "filterBefore": "Elegant White Floral\n\nIDR 60.000",
+  "filterOvalAfterFifth": {
+    "caption": null,
+    "slides": 2,
+    "currentDots": 0
+  },
+  "filterRecovered": "Oval Thumbelina\n\nIDR 80.000",
+  "dialog": {
+    "text": "OVAL\nOval Thumbelina\nHarga asli: Rp 120.000\nHarga promo: Rp 80.000\n/sewa\n\nPapan ucapan bentuk oval yang hangat dengan sentuhan bunga untuk momen spesial.\n\nSudah Termasuk:\nUcapan custom\nStand kayu\n\nKetersediaan tanggal, desain final, dan rincian biaya pengantaran/penjemputan akan dikoordinasikan melalui WhatsApp.\n\nTanya Model Ini",
+    "whatsapp": "https://wa.me/6289507991976?text=Halo%20Decormoment.bdl%2C%20saya%20tertarik%20dengan%20Oval%20Thumbelina%20yang%20saya%20lihat%20di%20website.%0A%0ATanggal%20acara%3A%0ALokasi%20acara%3A%0AUcapan%2Fnama%20pada%20papan%3A%0A%0ABoleh%20cek%20ketersediaan%20dan%20total%20biayanya%3F",
+    "focus": "dialog"
+  },
+  "tabFocus": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "inDialog": true
+    },
+    {
+      "tag": "A",
+      "text": "Tanya Model Ini",
+      "placement": "product_dialog",
+      "inDialog": true
+    },
+    {
+      "tag": "A",
+      "text": "Mulai dari WhatsApp",
+      "placement": "order_steps",
+      "inDialog": false
+    },
+    {
+      "tag": "SUMMARY",
+      "text": "Bisa pesan mendadak?",
+      "inDialog": false
+    },
+    {
+      "tag": "SUMMARY",
+      "text": "Bisa custom tulisan dan desain?",
+      "inDialog": false
+    }
+  ],
+  "escape": {
+    "closed": true,
+    "returnedToCarousel": false
+  },
+  "sideClickTarget": "Oval Pinkish",
+  "sideClickOpened": "Oval Thumbelina",
+  "anchor": {
+    "scrollY": 3560,
+    "headerBottom": 81,
+    "faqTop": 0.203125,
+    "faqHeadingTop": 80.203125
+  },
+  "faqOpens": true,
+  "mobileDialog": {
+    "width": 358,
+    "height": 812,
+    "scrollHeight": 1151,
+    "clientHeight": 812,
+    "imageHeight": 477.328125,
+    "bodyOverflow": "hidden"
+  },
+  "modalWheel": {
+    "before": {
+      "page": 1033,
+      "modal": 0
+    },
+    "after": {
+      "page": 1579,
+      "modal": 0
+    }
+  },
+  "noJs": {
+    "catalogText": "Pilih papan untuk momenmu.\nSemua\nOval\nKubah\n\nOval Thumbelina\n\nIDR 80.000",
+    "waLinks": 5
+  },
+  "assets": [
+    {
+      "url": "/robots.txt",
+      "status": 404
+    },
+    {
+      "url": "/sitemap.xml",
+      "status": 404
+    },
+    {
+      "url": "/favicon.ico",
+      "status": 404
+    },
+    {
+      "url": "/404.html",
+      "status": 200
+    }
+  ]
+}

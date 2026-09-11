@@ -1,0 +1,95 @@
+.catalog {
+  width: min(calc(100% - 2 * var(--page-gutter)), var(--container-max));
+  margin-inline: auto;
+  padding: var(--section-space) 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-section);
+  color: var(--color-ink);
+  margin-bottom: var(--space-4);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  min-height: 44px;
+  padding: 0 var(--space-5);
+  border-radius: var(--candy-radius);
+  background: var(--color-surface);
+  border: 1px solid var(--color-control-border);
+  color: var(--color-ink);
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform var(--motion-fast) var(--ease-out), box-shadow var(--motion-fast) var(--ease-out), background-color var(--motion-fast) var(--ease-out), border-color var(--motion-fast) var(--ease-out);
+}
+
+.filterBtn:hover {
+  background: var(--color-petal);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.filterBtn.active {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  border-color: var(--color-primary);
+  border: var(--candy-border);
+  box-shadow: var(--candy-shadow);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.filterBtn:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.filterBtn.active:active {
+  box-shadow: var(--candy-shadow-active);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-5);
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-6);
+  }
+}
+
+.empty {
+  text-align: center;
+  padding: var(--space-12) 0;
+  color: var(--color-muted);
+}
+
+.resetBtn {
+  margin-top: var(--space-4);
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}

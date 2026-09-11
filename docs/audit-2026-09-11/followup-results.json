@@ -1,0 +1,72 @@
+{
+  "fonts": {
+    "declared": [
+      {
+        "family": "__DM_Serif_Display_0e4539",
+        "status": "unloaded"
+      },
+      {
+        "family": "__DM_Serif_Display_0e4539",
+        "status": "unloaded"
+      },
+      {
+        "family": "__DM_Serif_Display_Fallback_0e4539",
+        "status": "unloaded"
+      },
+      {
+        "family": "__DM_Sans_0d7163",
+        "status": "unloaded"
+      },
+      {
+        "family": "__DM_Sans_0d7163",
+        "status": "unloaded"
+      },
+      {
+        "family": "__DM_Sans_Fallback_0d7163",
+        "status": "unloaded"
+      }
+    ],
+    "body": "\"DM Sans\", system-ui, sans-serif",
+    "title": "\"DM Serif Display\", Georgia, serif",
+    "fontRequests": []
+  },
+  "desktopBefore": {
+    "page": 911,
+    "modal": 0
+  },
+  "desktopAfter": {
+    "page": 1498,
+    "modal": 0
+  },
+  "mobileAccessibility": "- link:\n  - /url: https://wa.me/6289507991976?text=Halo%20Decormoment.bdl%2C%20saya%20ingin%20konsultasi%20papan%20ucapan%20untuk%20acara%20saya.%0ABoleh%20dibantu%20memilih%20model%20dan%20cek%20ketersediaannya%3F\n  - img",
+  "touchBefore": {
+    "page": 1033,
+    "modal": 0
+  },
+  "touchAfter": {
+    "page": 1033,
+    "modal": 339
+  },
+  "productChecks": [
+    {
+      "title": "Oval Thumbelina",
+      "message": "Halo Decormoment.bdl, saya tertarik dengan Oval Thumbelina yang saya lihat di website.\n\nTanggal acara:\nLokasi acara:\nUcapan/nama pada papan:\n\nBoleh cek ketersediaan dan total biayanya?"
+    },
+    {
+      "title": "Oval Pinkish",
+      "message": "Halo Decormoment.bdl, saya tertarik dengan Oval Pinkish yang saya lihat di website.\n\nTanggal acara:\nLokasi acara:\nUcapan/nama pada papan:\n\nBoleh cek ketersediaan dan total biayanya?"
+    },
+    {
+      "title": "Kubah Serenity Blue",
+      "message": "Halo Decormoment.bdl, saya tertarik dengan Kubah Serenity Blue yang saya lihat di website.\n\nTanggal acara:\nLokasi acara:\nUcapan/nama pada papan:\n\nBoleh cek ketersediaan dan total biayanya?"
+    },
+    {
+      "title": "Kubah Pinkish Bloom",
+      "message": "Halo Decormoment.bdl, saya tertarik dengan Kubah Pinkish Bloom yang saya lihat di website.\n\nTanggal acara:\nLokasi acara:\nUcapan/nama pada papan:\n\nBoleh cek ketersediaan dan total biayanya?"
+    },
+    {
+      "title": "Elegant White Floral",
+      "message": "Halo Decormoment.bdl, saya tertarik dengan Elegant White Floral yang saya lihat di website.\n\nTanggal acara:\nLokasi acara:\nUcapan/nama pada papan:\n\nBoleh cek ketersediaan dan total biayanya?"
+    }
+  ]
+}
