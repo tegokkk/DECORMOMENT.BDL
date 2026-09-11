@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { filterProductsByShape } from '@/lib/catalog';
+import { useDebouncedClick } from '@/hooks/useDebouncedClick';
 import { CoverflowCarousel } from '../ui/CoverflowCarousel';
 import ProductDialog from './ProductDialog';
 import styles from './CatalogClient.module.css';
@@ -9,6 +10,10 @@ import styles from './CatalogClient.module.css';
 export default function CatalogClient({ products, contact }) {
   const [selectedShape, setSelectedShape] = useState('all');
   const [selectedProductId, setSelectedProductId] = useState(null);
+
+  const handleFilterClick = useDebouncedClick((shape) => {
+    setSelectedShape(shape);
+  }, 350);
 
   const filteredProducts = filterProductsByShape(products, selectedShape);
   const selectedProduct = products.find(p => p.id === selectedProductId);
@@ -20,21 +25,21 @@ export default function CatalogClient({ products, contact }) {
         <div className={styles.filters} role="group" aria-label="Filter bentuk papan">
           <button 
             className={`${styles.filterBtn} ${selectedShape === 'all' ? styles.active : ''}`}
-            onClick={() => setSelectedShape('all')}
+            onClick={() => handleFilterClick('all')}
             aria-pressed={selectedShape === 'all'}
           >
             Semua
           </button>
           <button 
             className={`${styles.filterBtn} ${selectedShape === 'oval' ? styles.active : ''}`}
-            onClick={() => setSelectedShape('oval')}
+            onClick={() => handleFilterClick('oval')}
             aria-pressed={selectedShape === 'oval'}
           >
             Oval
           </button>
           <button 
             className={`${styles.filterBtn} ${selectedShape === 'kubah' ? styles.active : ''}`}
-            onClick={() => setSelectedShape('kubah')}
+            onClick={() => handleFilterClick('kubah')}
             aria-pressed={selectedShape === 'kubah'}
           >
             Kubah
@@ -45,6 +50,7 @@ export default function CatalogClient({ products, contact }) {
       {filteredProducts.length > 0 ? (
         <div className={styles.carouselWrapper}>
           <CoverflowCarousel 
+            key={selectedShape}
             slides={filteredProducts} 
             showNavigation={true}
             showPagination={true}
@@ -55,7 +61,7 @@ export default function CatalogClient({ products, contact }) {
       ) : (
         <div className={styles.empty}>
           <p>Belum ada model untuk pilihan ini.</p>
-          <button onClick={() => setSelectedShape('all')} className={styles.resetBtn}>
+          <button onClick={() => handleFilterClick('all')} className={styles.resetBtn}>
             Lihat semua koleksi
           </button>
         </div>

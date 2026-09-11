@@ -4,6 +4,7 @@ import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { getActivePrice } from '@/lib/pricing';
+import { useDebouncedClick } from '@/hooks/useDebouncedClick';
 import styles from './CoverflowCarousel.module.css';
 
 const useIsoLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
@@ -113,6 +114,9 @@ export function CoverflowCarousel({
     [clamp, settle]
   );
 
+  const handleGoTo = useDebouncedClick(goTo, 250);
+  const handleNudge = useDebouncedClick(nudge, 250);
+
   const onPointerDown = (event) => {
     if (rafRef.current !== null) {
       cancelAnimationFrame(rafRef.current);
@@ -216,10 +220,10 @@ export function CoverflowCarousel({
           onKeyDown={(event) => {
             if (event.key === 'ArrowLeft') {
               event.preventDefault();
-              nudge(-1);
+              handleNudge(-1);
             } else if (event.key === 'ArrowRight') {
               event.preventDefault();
-              nudge(1);
+              handleNudge(1);
             } else if (event.key === 'Enter' && onSlideClick) {
               event.preventDefault();
               if (active) onSlideClick(active);
@@ -253,7 +257,7 @@ export function CoverflowCarousel({
                     if (dragRef.current && Math.abs(e.clientX - dragRef.current.x) > 5) return;
                     
                     if (selected !== index) {
-                      goTo(index);
+                      handleGoTo(index);
                     } else if (onSlideClick) {
                       onSlideClick(slide);
                     }
@@ -284,7 +288,7 @@ export function CoverflowCarousel({
             <button
               type="button"
               aria-label="Previous slide"
-              onClick={() => nudge(-1)}
+              onClick={() => handleNudge(-1)}
               className={`${styles.navButton} ${styles.navButtonLeft}`}
             >
               <ChevronLeft size={20} />
@@ -292,7 +296,7 @@ export function CoverflowCarousel({
             <button
               type="button"
               aria-label="Next slide"
-              onClick={() => nudge(1)}
+              onClick={() => handleNudge(1)}
               className={`${styles.navButton} ${styles.navButtonRight}`}
             >
               <ChevronRight size={20} />
@@ -318,7 +322,7 @@ export function CoverflowCarousel({
               type="button"
               aria-label={`Go to slide ${index + 1}`}
               aria-current={index === selected}
-              onClick={() => goTo(index)}
+              onClick={() => handleGoTo(index)}
               className={styles.pageDot}
               style={{ opacity: index === selected ? 1 : 0.3 }}
             />
