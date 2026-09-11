@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="public/icon.png" width="100" alt="Decormoment Logo" />
+  <img src="docs/readme-banner.png" alt="Decormoment Banner" width="100%" />
+  <br />
+  <br />
   <h1>Decormoment.bdl</h1>
   <p><strong>Platform Landing Page Premium untuk Bisnis Papan Ucapan Akrilik</strong></p>
   
@@ -11,17 +13,17 @@
 
 <br />
 
-Website *landing page* ultra-cepat yang dirancang khusus untuk bisnis persewaan papan ucapan akrilik custom di Bandar Lampung. Menggabungkan estetika desain premium (*glassmorphism*, animasi yang halus, palet warna elegan) dengan performa tertinggi dari ekosistem **Next.js App Router** berbasis *Static Site Generation* (SSG).
+Website landing page ultra-cepat yang dirancang khusus untuk bisnis persewaan papan ucapan akrilik custom di Bandar Lampung. Menggabungkan estetika desain premium (glassmorphism, animasi yang halus, palet warna elegan) dengan performa tertinggi dari ekosistem **Next.js App Router** berbasis Static Site Generation (SSG).
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-- **🚀 Ultra Fast & Static:** Di-*build* murni sebagai HTML statis (`output: 'export'`), memastikan *loading* website instan tanpa jeda *server-response*.
-- **📱 Mobile-First UI/UX:** Tata letak disesuaikan 100% untuk kenyamanan pengguna *smartphone*, mulai dari jarak spasi (*padding/gap*), ukuran font (*fluid typography*), hingga rasio galeri produk.
-- **🎠 Coverflow Carousel:** Interaksi geser (swipe) produk berbasis CSS 3D dan *requestAnimationFrame* yang ringan dan mulus, tanpa ketergantungan *library* besar (*zero-dependency* carousel).
-- **💬 WhatsApp Seamless Integration:** Seluruh alur pemesanan diarahkan (konversi) langsung ke WhatsApp Admin dengan pesan *pre-filled* dinamis sesuai nama dan harga produk yang diklik.
-- **🔍 SEO Dominance:** Struktur Semantic HTML5 lengkap dengan *OpenGraph*, *Twitter Cards*, *Canonical Links*, dan optimasi lokal untuk kata kunci pencarian.
+- **Ultra Fast & Static:** Di-build murni sebagai HTML statis (`output: 'export'`), memastikan loading website instan tanpa jeda server-response.
+- **Mobile-First UI/UX:** Tata letak disesuaikan 100% untuk kenyamanan pengguna smartphone, mulai dari jarak spasi (padding/gap), ukuran font (fluid typography), hingga rasio galeri produk.
+- **Coverflow Carousel:** Interaksi geser (swipe) produk berbasis CSS 3D dan requestAnimationFrame yang ringan dan mulus, tanpa ketergantungan library besar (zero-dependency carousel).
+- **WhatsApp Seamless Integration:** Seluruh alur pemesanan diarahkan (konversi) langsung ke WhatsApp Admin dengan pesan pre-filled dinamis sesuai nama dan harga produk yang diklik.
+- **SEO Dominance:** Struktur Semantic HTML5 lengkap dengan OpenGraph, Twitter Cards, Canonical Links, dan optimasi lokal untuk kata kunci pencarian.
 
-## 🛠️ Stack Teknologi
+## Stack Teknologi
 
 - **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
 - **Library:** [React 18](https://reactjs.org/)
@@ -31,7 +33,7 @@ Website *landing page* ultra-cepat yang dirancang khusus untuk bisnis persewaan 
 
 ---
 
-## 💻 Panduan Menjalankan di Lokal (Developer)
+## Panduan Menjalankan di Lokal (Developer)
 
 Pastikan Anda memiliki [Node.js](https://nodejs.org/) (versi 18.x atau 20.x) terinstal di sistem Anda.
 
@@ -46,21 +48,21 @@ npm install
 ```bash
 npm run dev
 ```
-Buka [http://localhost:3000](http://localhost:3000) pada browser Anda. File akan otomatis ter-*update* saat Anda melakukan perubahan kode.
+Buka [http://localhost:3000](http://localhost:3000) pada browser Anda. File akan otomatis ter-update saat Anda melakukan perubahan kode.
 
 ### 3. Build & Pratinjau (Production)
-Karena website ini dikonfigurasi sebagai *Static Export*, jalankan perintah berikut untuk meng-generate file statisnya:
+Karena website ini dikonfigurasi sebagai Static Export, jalankan perintah berikut untuk meng-generate file statisnya:
 ```bash
 npm run build
 ```
-File hasil *build* akan masuk ke dalam folder `out/`. Anda bisa meninjaunya dengan perintah:
+File hasil build akan masuk ke dalam folder `out/`. Anda bisa meninjaunya dengan perintah:
 ```bash
 npm run preview
 ```
 
-## 📁 Struktur Konten (Cara Memperbarui Data)
+## Struktur Konten (Cara Memperbarui Data)
 
-Jika Anda ingin mengubah isi *website* tanpa harus menyentuh kode desain, Anda cukup memodifikasi file di dalam folder `src/data/`:
+Jika Anda ingin mengubah isi website tanpa harus menyentuh kode desain, Anda cukup memodifikasi file di dalam folder `src/data/`:
 
 | File Data | Kegunaan |
 | ------ | ------ |
@@ -68,22 +70,22 @@ Jika Anda ingin mengubah isi *website* tanpa harus menyentuh kode desain, Anda c
 | `src/data/products.js` | Menambah/menghapus/mengedit katalog model papan (nama, harga diskon, foto, kategori). |
 | `src/data/services.js` | Mengedit poin-poin keuntungan atau "Kenapa Memilih Kami". |
 | `src/data/faqs.js` | Menambah atau mengubah daftar Tanya Jawab (FAQ). |
-| `src/data/testimonials.js` | Memperbarui ulasan dan *rating* dari pelanggan. |
+| `src/data/testimonials.js` | Memperbarui ulasan dan rating dari pelanggan. |
 | `src/data/policies.js` | Mengubah Syarat & Ketentuan (S&K) penyewaan. |
 
 **Untuk Mengganti Warna/Tema Utama:**
 Buka file `src/styles/tokens.css` dan ubah nilai Hex pada bagian `--color-primary`, `--color-petal`, dll.
 
-## 🚀 Panduan Deployment (Vercel)
+## Panduan Deployment (Vercel)
 
 Website ini sangat direkomendasikan untuk di-hosting di [Vercel](https://vercel.com/) (Gratis selamanya).
 1. Login ke Vercel dengan akun GitHub Anda.
 2. Klik **Add New...** > **Project**.
 3. Import repositori `tegokkk/DECORMOMENT.BDL`.
 4. Biarkan konfigurasi bawaan (Vercel otomatis mengenali Next.js).
-5. Klik **Deploy** dan website akan *online* dalam hitungan menit!
+5. Klik **Deploy** dan website akan online dalam hitungan menit!
 
 ---
 <div align="center">
-  <sub>Dibuat dengan ❤️ untuk Decormoment.bdl</sub>
+  <small>Dibuat untuk Decormoment.bdl</small>
 </div>
