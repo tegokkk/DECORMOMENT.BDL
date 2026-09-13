@@ -1,0 +1,197 @@
+/* ============================================================
+   VideoSection — dua kolom (video kiri, teks kanan)
+   Mengikuti design system Decormoment.bdl
+   ============================================================ */
+
+/* ---- Section shell ---- */
+
+.section {
+  padding: var(--section-space) 0;
+  background: linear-gradient(
+    135deg,
+    var(--color-blush) 0%,
+    var(--color-petal) 40%,
+    var(--color-surface) 100%
+  );
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ---- Grid Layout ---- */
+
+.container {
+  width: min(calc(100% - 2 * var(--page-gutter)), var(--container-max));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "video"
+    "content";
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "video header"
+      "video content";
+    gap: var(--space-12);
+    align-items: center;
+  }
+}
+
+/* ============================================================
+   Grid Areas
+   ============================================================ */
+
+.headerArea {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  text-align: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .headerArea {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.videoArea {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.contentArea {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+.playerShell {
+  width: min(100%, 340px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 16px 40px -8px rgba(154, 63, 87, 0.22),
+    0 4px 12px -2px rgba(48, 36, 37, 0.08);
+  background: var(--color-ink);
+  /* cadangan ruang mencegah layout shift */
+  aspect-ratio: 9 / 16;
+}
+
+.iframeContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.fallbackLink {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  text-align: center;
+  margin: 0;
+}
+
+.fallbackLink a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 150ms ease;
+}
+
+.fallbackLink a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ============================================================
+   Kolom kanan — teks
+   ============================================================ */
+
+.eyebrow {
+  display: inline-block;
+  align-self: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+  .eyebrow {
+    align-self: flex-start;
+  }
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.625rem, 3.5vw, 2.375rem);
+  color: var(--color-ink);
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* ---- Highlight list ---- */
+
+.highlights {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: 0.9375rem;
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+.checkIcon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ---- CTA ---- */
+
+.ctaWrapper {
+  margin-top: var(--space-2);
+}
+
+.ctaButton {
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .ctaButton {
+    width: auto;
+    min-width: 240px;
+  }
+}

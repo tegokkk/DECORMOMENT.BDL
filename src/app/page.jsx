@@ -6,6 +6,7 @@ import ServicesSection from '@/components/sections/ServicesSection';
 import OrderStepsSection from '@/components/sections/OrderStepsSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import GuaranteeSection from '@/components/sections/GuaranteeSection';
+import VideoSection from '@/components/sections/VideoSection';
 import FaqSection from '@/components/sections/FaqSection';
 import ClosingSection from '@/components/sections/ClosingSection';
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp';
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <CatalogSection />
+        <VideoSection />
         <ServicesSection />
         <OrderStepsSection />
         <TestimonialsSection />
