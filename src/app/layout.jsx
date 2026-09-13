@@ -68,6 +68,9 @@ export const metadata = {
       { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
+  verification: {
+    google: 'Sv4F8_M5gtPDzo5rxw2mwvw0WbFJJQCVsDXjoKwWUM4',
+  },
 };
 
 import SmoothScroll from '@/components/layout/SmoothScroll';
