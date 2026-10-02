@@ -2,7 +2,9 @@
 
 import { useState } from 'react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { site } from '@/data/site';
 import styles from './QuestionSlides.module.css';
+import WhatsAppLink from '../ui/WhatsAppLink';
 
 const questions = [
   'Sedang cari papan ucapan yang cantik, estetik, dan siap dikirim ke lokasi acara?',
@@ -41,26 +43,34 @@ export default function QuestionSlides() {
           </div>
         </div>
 
-        <div className={styles.controls}>
-          <span className={styles.counter} aria-hidden="true">
-            0{activeIndex + 1}<span> / 0{questions.length}</span>
-          </span>
-          <button
-            type="button"
-            className={styles.arrow}
-            onClick={() => showSlide(activeIndex - 1)}
-            aria-label="Pertanyaan sebelumnya"
-          >
-            <ArrowLeft size={18} strokeWidth={1.8} />
-          </button>
-          <button
-            type="button"
-            className={styles.arrow}
-            onClick={() => showSlide(activeIndex + 1)}
-            aria-label="Pertanyaan berikutnya"
-          >
-            <ArrowRight size={18} strokeWidth={1.8} />
-          </button>
+        <div className={styles.slideFooter}>
+          <div className={styles.actions}>
+            <a href="#katalog" className={styles.primaryButton}>Lihat Koleksi</a>
+            <WhatsAppLink contact={site.whatsapp} placement="questions" className={styles.secondaryButton}>
+              Cek Ketersediaan
+            </WhatsAppLink>
+          </div>
+          <div className={styles.controls}>
+            <span className={styles.counter} aria-hidden="true">
+              0{activeIndex + 1}<span> / 0{questions.length}</span>
+            </span>
+            <button
+              type="button"
+              className={styles.arrow}
+              onClick={() => showSlide(activeIndex - 1)}
+              aria-label="Pertanyaan sebelumnya"
+            >
+              <ArrowLeft size={18} strokeWidth={1.8} />
+            </button>
+            <button
+              type="button"
+              className={styles.arrow}
+              onClick={() => showSlide(activeIndex + 1)}
+              aria-label="Pertanyaan berikutnya"
+            >
+              <ArrowRight size={18} strokeWidth={1.8} />
+            </button>
+          </div>
         </div>
       </div>
     </section>

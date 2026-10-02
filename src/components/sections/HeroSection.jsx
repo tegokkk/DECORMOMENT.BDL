@@ -1,9 +1,7 @@
 import Image from 'next/image';
-import { site } from '@/data/site';
 import { products } from '@/data/products';
 import { formatRupiah, getActivePrice } from '@/lib/pricing';
 import styles from './HeroSection.module.css';
-import WhatsAppLink from '../ui/WhatsAppLink';
 
 export default function HeroSection() {
   const activePrices = products
@@ -58,13 +56,6 @@ export default function HeroSection() {
           <p className={styles.description}>
             Sewa papan ucapan akrilik custom untuk wisuda, wedding, &amp; grand opening. Harga mulai <strong>{formatRupiah(lowestPrice)}</strong>.
           </p>
-
-          <div className={styles.actions}>
-            <a href="#katalog" className={styles.primaryButton}>Lihat Koleksi</a>
-            <WhatsAppLink contact={site.whatsapp} placement="hero" className={styles.secondaryButton}>
-              Cek Ketersediaan
-            </WhatsAppLink>
-          </div>
 
           {/* Trust badges */}
           <div className={styles.trustRow}>
