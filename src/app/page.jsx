@@ -1,6 +1,7 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
+import QuestionSlides from '@/components/sections/QuestionSlides';
 import CatalogSection from '@/components/catalog/CatalogSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import OrderStepsSection from '@/components/sections/OrderStepsSection';
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <QuestionSlides />
         <CatalogSection />
         <VideoSection />
         <ServicesSection />

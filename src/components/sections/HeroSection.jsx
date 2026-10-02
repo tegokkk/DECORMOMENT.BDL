@@ -59,18 +59,18 @@ export default function HeroSection() {
             Sewa papan ucapan akrilik custom untuk wisuda, wedding, &amp; grand opening. Harga mulai <strong>{formatRupiah(lowestPrice)}</strong>.
           </p>
 
-          {/* Trust badges */}
-          <div className={styles.trustRow}>
-            <span className={styles.trustBadge}>100+ Pelanggan</span>
-            <span className={styles.trustBadge}>Antar ke Lokasi</span>
-            <span className={styles.trustBadge}>Desain Custom</span>
-          </div>
-
           <div className={styles.actions}>
             <a href="#katalog" className={styles.primaryButton}>Lihat Koleksi</a>
             <WhatsAppLink contact={site.whatsapp} placement="hero" className={styles.secondaryButton}>
               Cek Ketersediaan
             </WhatsAppLink>
+          </div>
+
+          {/* Trust badges */}
+          <div className={styles.trustRow}>
+            <span className={styles.trustBadge}>100+ Pelanggan</span>
+            <span className={styles.trustBadge}>Antar ke Lokasi</span>
+            <span className={styles.trustBadge}>Desain Custom</span>
           </div>
         </div>
 

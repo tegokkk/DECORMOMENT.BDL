@@ -170,6 +170,7 @@
   flex-wrap: wrap;
   gap: var(--space-3);
   justify-content: center;
+  margin-bottom: var(--space-4);
 }
 
 @media (min-width: 1024px) {

@@ -13,6 +13,21 @@
   display: none;
 }
 
+@media (max-width: 639px) {
+  .wrapper {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .floatingButton {
+    width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    padding: 0;
+    border-radius: 50%;
+  }
+}
+
 @media (min-width: 640px) {
   .text {
     display: inline;
